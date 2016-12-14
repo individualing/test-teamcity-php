@@ -19,3 +19,6 @@ modules:
             user: 'root'
             password: ''
             dump: tests/_data/dump.sql
+
+reporters:
+  report: PHPUnit_Util_Log_TeamCity
