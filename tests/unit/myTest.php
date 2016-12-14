@@ -14,40 +14,40 @@ namespace tests\unit;
  */
 class myTest extends \Codeception\Test\Unit
 {
-    public static function setUpBeforeClass()
-    {
-        fwrite(STDOUT, __METHOD__."\n");
-    }
+//    public static function setUpBeforeClass()
+//    {
+//        fwrite(STDOUT, __METHOD__."\n");
+//    }
+//
+//    protected function setUp()
+//    {
+//        fwrite(STDOUT, __METHOD__."\n");
+//    }
+//
+//    protected function assertPreConditions()
+//    {
+//        fwrite(STDOUT, __METHOD__."\n");
+//    }
+//
+//    protected function assertPostConditions()
+//    {
+//        fwrite(STDOUT, __METHOD__."\n");
+//    }
+//
+//    protected function tearDown()
+//    {
+//        fwrite(STDOUT, __METHOD__."\n");
+//    }
+//
+//    public static function tearDownAfterClass()
+//    {
+//        fwrite(STDOUT, __METHOD__."\n");
+//    }
 
-    protected function setUp()
-    {
-        fwrite(STDOUT, __METHOD__."\n");
-    }
-
-    protected function assertPreConditions()
-    {
-        fwrite(STDOUT, __METHOD__."\n");
-    }
-
-    protected function assertPostConditions()
-    {
-        fwrite(STDOUT, __METHOD__."\n");
-    }
-
-    protected function tearDown()
-    {
-        fwrite(STDOUT, __METHOD__."\n");
-    }
-
-    public static function tearDownAfterClass()
-    {
-        fwrite(STDOUT, __METHOD__."\n");
-    }
-
-    protected function onNotSuccessfulTest($e)
-    {
-        fwrite(STDOUT, __METHOD__."\n");
-    }
+//    protected function onNotSuccessfulTest($e)
+//    {
+//        fwrite(STDOUT, __METHOD__."\n");
+//    }
 
     public function testEmpty()
     {
@@ -130,5 +130,17 @@ class myTest extends \Codeception\Test\Unit
         echo 'testString';
     }
 
+    public function testechosubject()
+    {
+        $str = observer::$str;
+        $this->expectOutputString('test');
+        echo $str;
+    }
 
+
+}
+
+class observer
+{
+    static $str = 'test';
 }

@@ -23,4 +23,37 @@ class AcceptanceTester extends \Codeception\Actor
    /**
     * Define custom actions here
     */
+
+    /**
+     * @Given I have product with $:num1:num2:num2 price in my cart
+     */
+    public function iHaveProductWithPriceInMyCart($num1, $num2, $num3)
+    {
+        throw new \Codeception\Exception\Incomplete("Step `I have product with $:num1:num2:num2 price in my cart` is not defined");
+    }
+
+
+    /**
+     * @When I go to checkout process
+     */
+    public function iGoToCheckoutProcess()
+    {
+        throw new \Codeception\Exception\Incomplete("Step `I go to checkout process` is not defined");
+    }
+
+    /**
+     * @Then I should see that total number of products is :num1
+     */
+    public function iShouldSeeThatTotalNumberOfProductsIs($num1)
+    {
+        throw new \Codeception\Exception\Incomplete("Step `I should see that total number of products is :num1` is not defined");
+    }
+
+    /**
+     * @Then my order amount is $:num1:num2:num3:num3
+     */
+    public function myOrderAmountIs($num1, $num2, $num3, $num4)
+    {
+        throw new \Codeception\Exception\Incomplete("Step `my order amount is $:num1:num2:num3:num3` is not defined");
+    }
 }
