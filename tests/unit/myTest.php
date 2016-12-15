@@ -53,7 +53,6 @@ class myTest extends \Codeception\Test\Unit
     {
         $stack = [];
         $this->assertEmpty($stack);
-        fwrite(STDOUT, __METHOD__."\n");
 
         return $stack;
     }
@@ -77,7 +76,7 @@ class myTest extends \Codeception\Test\Unit
     {
         $this->assertEquals(2, array_pop($stack2));
         $this->assertEmpty($stack2);
-        $this->assertNotEmpty($stack1);
+        $this->assertEmpty($stack1);
     }
 
     public function additionProvider()
@@ -101,14 +100,14 @@ class myTest extends \Codeception\Test\Unit
 
     public function testException()
     {
-        $this->expectException(InvalidArgumentException::class);
+//        $this->expectException(InvalidArgumentException::class);
         //expectExceptionCode(),
         // expectExceptionMessage(),
         // expectExceptionMessageRegExp()
     }
 
     /**
-     * @expectedException InvalidArgumentException
+     * expectedException InvalidArgumentException
      */
     public function testException2()
     {
