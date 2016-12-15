@@ -107,7 +107,7 @@ class myTest extends \Codeception\Test\Unit
     }
 
     /**
-     * expectedException InvalidArgumentException
+     * @expectedException InvalidArgumentException
      */
     public function testException2()
     {
