@@ -132,7 +132,7 @@ class myTest extends \Codeception\Test\Unit
     public function testechosubject()
     {
         $str = observer::$str;
-        $this->expectOutputString('test');
+        $this->expectOutputString('testtriger');
         echo $str;
     }
 
@@ -141,5 +141,5 @@ class myTest extends \Codeception\Test\Unit
 
 class observer
 {
-    static $str = 'test';
+    static $str = 'testtriger';
 }
