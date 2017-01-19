@@ -7,6 +7,9 @@
 
 namespace tests\unit;
 
+use app\models\User;
+use \AspectMock\Test as test;
+
 /**
  * Class myTest
  * @package tests\unit
@@ -47,6 +50,16 @@ class myTest extends \Codeception\Test\Unit
 //    protected function onNotSuccessfulTest($e)
 //    {
 //        fwrite(STDOUT, __METHOD__."\n");
+//    }
+
+//    public function testUserObject()
+//    {
+//        $user = test::double(User::className(), [
+//            'getId' => '5'
+//        ]);
+//        $model = new User();
+//        $model->getId();
+//        $user->verifyInvoked('getId');
 //    }
 
     public function testEmpty()

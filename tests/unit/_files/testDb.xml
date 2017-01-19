@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<dataset>
+    <table name="bmp_notify">
+        <column>notify_id</column>
+        <column>task_id</column>
+        <column>title</column>
+        <column>content</column>
+        <column>notify_type</column>
+        <column>notify_status</column>
+        <column>notify_user_id</column>
+        <column>is_delete</column>
+        <column>create_time</column>
+        <column>update_time</column>
+        <column>business_type</column>
+        <row>
+            <value>1</value>
+            <value>0</value>
+            <value>this is title</value>
+            <value>this is content</value>
+            <value>0</value>
+            <value>0</value>
+            <value>90084</value>
+            <value>0</value>
+            <value>0</value>
+            <value>0</value>
+            <value>3</value>
+        </row>
+    </table>
+</dataset>

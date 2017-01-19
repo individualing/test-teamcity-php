@@ -18,7 +18,7 @@ modules:
             dsn: '127.0.0.1'
             user: 'root'
             password: ''
-            dump: tests/_data/dump.sql
+            dump: _data/dump.sql
 
 reporters:
   report: PHPUnit_Util_Log_TeamCity
